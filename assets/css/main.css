@@ -2193,6 +2193,8 @@ input, select, textarea {
 		cursor: default;
 		list-style: none;
 		padding-left: 0;
+		justify-content: center;
+		align-items: center;
 	}
 
 		ul.icons li {
@@ -2218,7 +2220,7 @@ input, select, textarea {
 		ul.labeled-icons li {
 			line-height: 1.75em;
 			margin: 1.5em 0 0 0;
-			padding-left: 2.25em;
+			padding-left: 2em;
 			position: relative;
 		}
 
@@ -2235,6 +2237,7 @@ input, select, textarea {
 				left: 0;
 				position: absolute;
 				text-align: center;
+				align-items: ;
 				top: 0;
 				width: 1em;
 			}
@@ -3152,6 +3155,7 @@ input, select, textarea {
 
 				ul.labeled-icons li h3 {
 					line-height: 1.75em;
+					align-items: center
 				}
 
 		/* Header */
