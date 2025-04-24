@@ -1,0 +1,62 @@
+.portfolio-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+
+.portfolio-subtitle {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.filter-btn {
+    border: 1px solid #ccc;
+    padding: 0.5rem 1rem;
+    background: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.filter-btn.active {
+    background-color: #5aa9a0;
+    color: white;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.project-item {
+    color: #333; /* or #000 for pure black */
+    opacity: 1;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 1rem;
+    background-color: #f9f9f9;
+}
+
+.project-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #0b7285;
+    font-weight: bold;
+}
