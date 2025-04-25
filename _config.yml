@@ -68,11 +68,11 @@ reCaptcha:
 atom_feed:
   path                   : # blank (default) uses feed.xml
   hide                   : # true, false (default)
-search                   : # true, false (default)
-search_full_content      : # true, false (default)
+search                   : true # true, false (default)
+search_full_content      : true # true, false (default)
 search_provider          : # lunr (default), algolia, google
 lunr:
-  search_within_pages    : # true, false (default)
+  search_within_pages    : true # true, false (default)
 algolia:
   application_id         : # YOUR_APPLICATION_ID
   index_name             : # YOUR_INDEX_NAME
@@ -116,15 +116,12 @@ author:
   name             : "Nicholas Lee"
   avatar           : "/assets/images/avatar.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Computational biology, bioinformatics, drug discovery, and data science."
-  location         : "Washington, USA"
+  location         : "Seattle WA, USA"
   email            : "nicklee0101@gmail.com"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:nicklee0101@gmail.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://nick-lee.com"
+    # - label: "Website"
+    #   icon: "fas fa-fw fa-link"
+    #   url: "https://nick-lee.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/leen01"
@@ -147,7 +144,9 @@ footer:
 include:
   - .htaccess
   - _pages
-  - _portfolio
+  - _projects
+  - assets/css
+  - assets/js
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -216,23 +215,23 @@ timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Pagination with jekyll-paginate
 paginate: 5 # amount of posts to show
-paginate_path: /page:num/
+paginate_path: /projects/page:num/
 
 # Pagination with jekyll-paginate-v2
 # See https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration
 #   for configuration details
 pagination:
   # Set enabled to true to use paginate v2
-  # enabled: true
+  enabled: true
   debug: false
-  collection: 'posts'
-  per_page: 10
+  collection: 'projects'
+  per_page: 3
   permalink: '/page/:num/'
   title: ':title - page :num'
   limit: 0
   sort_field: 'date'
   sort_reverse: true
-  category: 'posts'
+  category: 'projects'
   tag: ''
   locale: ''
   trail:
@@ -294,7 +293,7 @@ compress_html:
     envs: development
 
 collections:
-  portfolio:
+  projects:
     output: true
     permalink: /:collection/:path/
 
@@ -307,7 +306,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
       comments: # true
       share: true
       related: true

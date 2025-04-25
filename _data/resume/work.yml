@@ -1,0 +1,56 @@
+- company: "Seattle Children's Research Institute"
+  role: "Data Scientist"
+  location: "Seattle, WA"
+  dates: "Jun 2024 - Present"
+  bullets:
+    - "Developed comprehensive documentation for FAIR data management standards and data ecosystems (e.g., REDCap, LabKey, NIH public repositories, and ontologies) to facilitate data sharing across consortiums, utilizing GitHub Pages with Markdown, HTML, CSS, and Ruby."
+    - "Curated and prepared sequencing and microscopy datasets for public release, supporting the NIH's FAIR data sharing initiative and advancing reproducibility in scientific research."
+    - "Designed metadata templates aligned with data models from four distinct repositories and established biomedical ontologies to ensure interoperability across systems and collaboration between five institutions"
+
+- role: "Biomedical Data Curator"
+  company: "Sage Bionetworks"
+  location: "Seattle, WA"
+  dates: "Mar 2023 - May 2024"
+  bullets:
+    - "Processing, cleansing, and verifying the integrity of data used for analysis from 10+ institutions and 20+ contributors across the world for four data-sharing portals to advance translational research for Alzheimer's treatments."
+    - "Transforming, cleaning, and annotating 500,000+ files containing sensitive Personally Identifiable Information (PII) following Findability, Accessibility, Interoperability, and Reusability (FAIR) principles in secured AWS EC2 instances to share on four NIH-funded projects."
+    - "Designed the data model for the Exceptional Longevity (EL) portal ensuring metadata harmonization and improving data discoverability on the publicly available portal."
+
+- role: "Research Analyst II"
+  company: "Seagen"
+  location: "Bothell, WA"
+  dates: "Mar 2022 - Feb 2023"
+  bullets:
+    - "Aided in the study design and implementation of 20+ multiparameter experiments characterizing new therapeutic candidates to advance them from proof of concept to preclinical testing."
+    - "Deployed R Shiny dashboard that democratized 5 years of protein pharmacokinetic and pharmacodynamic experiments to empower the research department to make data-driven decisions for therapeutics."
+
+- role: "Data Engineer & Solutions Architect Consultant"
+  company: "Ramparts Bioscience Inc."
+  location: "Monrovia, CA"
+  dates: "Feb 2022 - Jul 2022"
+  bullets:
+    - "Developed reporting tools in Python and scalable PostgreSQL database architecture to track metrics in preclinical studies involving 5 departments."
+    - "Centralized data reporting and automated routine analysis by creating ETL pipelines using R, Python, and SQL to extract metrics from machine files into a PostgreSQL database and PowerBi dashboards improving cross-department collaboration."
+
+- role: "Senior Research Analyst"
+  company: "Ramparts Bioscience Inc."
+  location: "Monrovia, CA"
+  dates: "Sep 2021 - Jan 2022"
+  bullets:
+    - "Created PowerBi dashboard to track 10+ key metrics related to product performance over time to detect product drift and expiration leading to improved product designs."
+    - "Devised A/B experimentation that saved 11 days on 2-week-long routine processes and improved product yield by 50%."
+
+- role: "Research Associate I"
+  company: "Ramparts Bioscience Inc."
+  location: "Monrovia, CA"
+  dates: "Aug 2020 - Sep 2021"
+  bullets:
+    - "Implemented scalable database schema in Benchling, an electronic notebook software, training for 20+ employees, to document 100+ experiments and record 2000+ metrics on novel therapeutic for drug products."
+    - "Automated experiment setup and reporting for 5 different routine experiments using custom Excel templates and R scripting reducing hands-on time by 90%."
+
+- role: "Analytical Research Associate"
+  company: "Bristol Myers Squibb"
+  location: "Seattle, WA"
+  dates: "Jan 2020 - Jul 2020"
+  bullets:
+    - "Created reports of 20+ key metrics from multiple high-throughput molecular experiments, 400+ samples/week to support research and quality assurance studies for Abecma (ide-cel) and Breyanzi, multi-million-dollar chimeric antigen receptor (CAR) T cell therapies."

@@ -2,6 +2,7 @@
 layout: single
 title: "About Me"
 permalink: /about/
+toc: true
 ---
 
 # 👋 Hi, I'm Nick Lee
@@ -37,6 +38,25 @@ I’m currently exploring opportunities that blend:
 - **Clinical data modeling & real-world evidence**
 
 I'm also preparing for **PhD programs** that focus on **translational bioinformatics** and **precision health**, particularly in the UC and Stanford systems.
+
+---
+
+## Skills
+
+**🧠 Programming Languages**
+- Python, R, SQL, Bash
+
+**🧰 Tools & Libraries**
+- Pandas, Scikit-learn, BioPython, TensorFlow, OpenCV, matplotlib
+- Docker, Git, Jupyter, Conda, Flask, Hugging Face
+
+**🔬 Domains**
+- Bioinformatics
+- Computational Drug Discovery
+- Data Wrangling & Cleaning
+- Molecular Modeling
+- NLP for Biomedical Texts
+
 
 ---
 

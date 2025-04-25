@@ -5,8 +5,7 @@ layout: single
 collection: portfolio
 tags: [ML, healthcare, classification]
 category: ML for Biomedicine
-header:
-  overlay_image: /assets/images/projects/breat-tumor-classification.png
+thumbnail: /assets/images/projects/breat-tumor-classification.png
 ---
 
 Used supervised machine learning models to classify tumors from the Wisconsin Breast Cancer dataset.

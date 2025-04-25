@@ -1,4 +1,4 @@
-# File: _portfolio/variant-classifier.md
+# File: _projects/variant-classifier.md
 ---
 title: "Genomic Variant Classifier"
 excerpt: "A machine learning model that predicts pathogenicity of SNPs."

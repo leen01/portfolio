@@ -5,8 +5,7 @@ layout: single
 collection: portfolio
 tags: [education, eda, data-viz]
 category: Exploratory Analysis
-header:
-  overlay_image: /assets/images/projects/eda-college-scorecard.png
+thumbnail: /assets/images/projects/eda-college-scorecard.png
 ---
 
 Visualized trends and correlations in college debt, cost, and income outcomes using the U.S. Department of Education Scorecard dataset.

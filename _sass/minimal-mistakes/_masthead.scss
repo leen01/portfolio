@@ -89,3 +89,12 @@
     font-weight: 700;
   }
 }
+
+/* Sticky header */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  // background-color: white;
+  /* Add background color to prevent text from disappearing on scroll */
+}

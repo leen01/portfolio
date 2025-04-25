@@ -1,20 +1,19 @@
 ---
-layout: archive
+layout: default
 ---
-
 {{ content }}
 
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_projects | default: "Recent Projects" }}</h3>
 
 {% if paginator %}
-  {% assign projects = paginator.projects %}
+{% assign projects = paginator.posts %}
 {% else %}
-  {% assign projects = site.projects %}
+{% assign projects = site.projects %}
 {% endif %}
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
 <div class="entries-{{ entries_layout }}">
-  {% include documents-collection.html entries=projects type=entries_layout %}
+    {% include documents-collection.html entries=posts type=entries_layout %}
 </div>
 
 {% include paginator.html %}

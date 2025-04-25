@@ -36,7 +36,7 @@ This Jekyll-based site includes:
 - **`projects.md`** – Descriptions of selected bioinformatics and data science projects
 - **`experience.md`** – A timeline of my research and professional experience
 - **`resume.pdf`** – A downloadable PDF of my resume
-- **`_portfolio/`** – Markdown files for each individual project post
+- **`_projects/`** – Markdown files for each individual project post
 
 ---
 

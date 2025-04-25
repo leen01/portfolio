@@ -1,0 +1,61 @@
+---
+layout: default
+---
+
+<div class="page__inner-wrap">
+    <header>
+        <h1 class="page__title">{{ page.title }}</h1>
+        {% if page.subtitle %}
+        <p class="page__subtitle">{{ page.subtitle }}</p>
+        {% endif %}
+    </header>
+
+    <!-- Optional intro content from projects.md -->
+    <div class="page__content">
+        {{ content }}
+    </div>
+
+    <div class="portfolio-layout">
+
+        <!-- Sidebar Filters -->
+        <aside class="filter-sidebar">
+            <h3>Filter</h3>
+            <input type="text" id="search" placeholder="Search projects...">
+
+            <label for="tagFilter">Tag:</label>
+            <select id="tagFilter">
+                <option value="all">All Tags</option>
+            </select>
+
+            <label for="categoryFilter">Category:</label>
+            <select id="categoryFilter">
+                <option value="all">All Categories</option>
+            </select>
+        </aside>
+
+        <!-- Project Grid -->
+        <div id="project-list" class="portfolio-grid">
+            {% for project in site.projects %}
+            <div class="project-item" data-title="{{ project.title | downcase }}"
+                data-tags="{{ project.tags | join: ' ' }}" data-category="{{ project.category | downcase }}">
+
+                <img src="{{ project.header.overlay_image }}" alt="{{ project.title }}">
+                <h3>{{ project.title }}</h3>
+                <p>{{ project.excerpt }}</p>
+
+                <p>
+                    {% for tag in project.tags %}
+                    <span class="tag">{{ tag }}</span>
+                    {% endfor %}
+                </p>
+
+                <a href="{{ project.url }}" class="project-link">View Project</a>
+            </div>
+            {% endfor %}
+        </div>
+
+    </div>
+
+    <script src="/assets/js/project-filters.js"></script>
+    <link rel="stylesheet" href="/assets/css/projects.css">
+</div>

@@ -2,13 +2,11 @@
 main:
   - title: "Home"
     url: "/"
-  - title: "About"
-    url: /about/
-  - title: "Skills"
-    url: "/skills/"
   - title: "Projects"
     url: "/projects/"
   - title: "Resume"
     url: "/resume/"
+  - title: "About"
+    url: /about/
   - title: "GitHub"
     url: "https://github.com/leen01"
