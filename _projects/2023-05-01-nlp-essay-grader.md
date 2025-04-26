@@ -5,7 +5,7 @@ layout: single
 collection: portfolio
 tags: [nlp, education, machine-learning]
 category: NLP & ML
-thumbnail: /assets/images/projects/nlp-essay-grader.png
+thumbnail: /assets/img/projects/nlp-essay-grader.png
 header: 
   overlay_image: /assets/img/projects/essay_grader_header.png
 ---

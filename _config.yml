@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "Nicholas Lee"
-  avatar           : "/assets/images/avatar.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/img/avatar.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Computational biology, bioinformatics, drug discovery, and data science."
   location         : "Seattle WA, USA"
   email            : "nicklee0101@gmail.com"
