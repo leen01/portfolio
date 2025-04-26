@@ -5,7 +5,7 @@ layout: single
 collection: portfolio
 tags: [regression, eda, automotive]
 category: Statistics
-thumbnail: /assets/images/projects/mpg-regression.png
+thumbnail: /assets/img/projects/mpg-regression.png
 ---
 
 Performed exploratory data analysis and regression modeling on car attributes to predict miles-per-gallon (MPG).

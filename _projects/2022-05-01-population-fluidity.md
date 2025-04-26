@@ -5,7 +5,7 @@ layout: single
 collection: portfolio
 tags: [tableau,	visualization, civic-data, frontend]
 category: Data Visualization
-thumbnail: /assets/images/projects/population-fluidity.png
+thumbnail: /assets/img/projects/us-migration-patterns.png
 ---
 
 An interactive website that visualizes and explores U.S. population movement, eviction, and demographic change using census and eviction lab data.

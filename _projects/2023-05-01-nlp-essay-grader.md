@@ -7,7 +7,7 @@ tags: [nlp, education, machine-learning]
 category: NLP & ML
 thumbnail: /assets/images/projects/nlp-essay-grader.png
 header: 
-  overlay_image: /assets/images/projects/essay_grader_header.png
+  overlay_image: /assets/img/projects/essay_grader_header.png
 ---
 
 Built a tool that automatically grades open-ended student responses by comparing them with model answers using vector similarity techniques.
