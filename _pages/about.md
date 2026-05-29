@@ -5,57 +5,27 @@ permalink: /about/
 toc: true
 ---
 
-# Hi, I'm Nick Lee
+## Origin
 
-I'm a **data engineer and scientist in life sciences** with a background spanning **molecular biology**, **clinical data engineering**, and **applied machine learning**. I build the infrastructure and models that turn raw EHR, claims, and omics data into evidence that drives clinical and translational decisions.
+I spent four years at the bench doing molecular biology — cloning, cell culture, assay development — before realizing that the data coming out of those experiments was often more interesting than the experiments themselves. That curiosity pulled me toward computation, and eventually to an MS in Data Science at UC Berkeley, where I learned to build the systems that turn messy biological data into reproducible evidence.
 
----
-
-## What I Do
-
-I combine wet-lab domain knowledge with software and analytics to work at the intersection of **biology and data**. My work includes:
-
-- Designing end-to-end data pipelines from raw EHR and claims tables to analysis-ready cohorts (Snowflake, dbt, Python)
-- Building real-world evidence (RWE) studies — cohort selection, propensity score matching, survival analysis, and causal inference
-- Applying machine learning to clinical and biomedical datasets (scikit-learn, SHAP, gradient boosting)
-- Collaborating directly with clinical and translational teams, leveraging a BS in molecular biology and 4 years of bench experience
+The bench background isn't a detour. It's the reason I can read a study design, spot a cohort definition problem, or push back on a survival model assumption in ways that a pure software engineer can't.
 
 ---
 
-## Background
+## What I Build
 
-My molecular biology background gives me the domain fluency to work directly with clinical and scientific teams — not just beside them. I understand the experimental constraints behind the data, which makes a real difference when designing cohort logic, interpreting survival curves, or communicating findings.
-
----
-
-## Looking Ahead
-
-I'm focused on roles where rigorous data engineering and data science accelerate clinical development — whether that's building patient cohort infrastructure, designing RWE studies, or modeling treatment outcomes at scale.
+- End-to-end data pipelines from raw EHR and claims tables to analysis-ready cohorts using Snowflake, dbt, and Python
+- Real-world evidence (RWE) studies — propensity score matching, survival analysis, Cox proportional hazards, and causal inference
+- ML models on clinical and biomedical datasets with SHAP-based interpretability for clinical stakeholders
+- Data products that connect translational scientists with the infrastructure they need to ask better questions faster
 
 ---
 
-## Skills
+## What I'm Looking For
 
-**Programming & Query**
-- Python, SQL, R, Bash
-
-**Data Engineering**
-- Snowflake, dbt, AWS, Docker, Git
-
-**Analytics & ML**
-- pandas, scikit-learn, lifelines, SHAP, matplotlib, seaborn
-
-**Domains**
-- Real-World Evidence (RWE)
-- Survival Analysis & Causal Inference
-- EHR & Claims Data
-- Clinical Cohort Design
-- Biomedical NLP
+I'm targeting senior data science and clinical data engineering roles at biopharma, CRO, or health tech companies where I can work at the intersection of clinical development and data infrastructure — designing RWE studies, building patient cohort pipelines, and modeling treatment outcomes at scale. The right role gives me hard problems, clinical domain exposure, and a team that cares about getting the science right, not just shipping dashboards.
 
 ---
-
-## Let's Connect
-
-If you're working on something data-driven in life sciences, biotech, or clinical development — I'd love to chat.
 
 [nicklee0101@gmail.com](mailto:nicklee0101@gmail.com) | [LinkedIn](https://linkedin.com/in/leen01) | [GitHub](https://github.com/leen01)

@@ -3,6 +3,7 @@ title: "College Scorecard EDA"
 excerpt: "Exploratory data analysis of U.S. college cost, debt, and earnings using Scorecard data."
 layout: single
 collection: projects
+published: false
 tags: [education, eda, data-viz]
 category: projects
 date: 2021-08-01

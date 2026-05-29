@@ -22,6 +22,13 @@ search: false
   white-space: nowrap;
 }
 
+// Cap project page header image height so content is reachable without heavy scrolling
+.page__hero-image {
+  max-height: 380px;
+  object-fit: cover;
+  object-position: center;
+}
+
 // Featured projects — make entire card clickable
 .archive__item-link {
   display: block;

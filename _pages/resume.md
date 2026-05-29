@@ -12,7 +12,7 @@ toc_level: 2
 📍 Monroe, WA  
 📞 +1 425-420-7223  
 📧 [nicklee0101@gmail.com](mailto:nicklee0101@gmail.com)  
-🔗 [LinkedIn](https://linkedin.com/in/leen01) • [Portfolio](https://leen01.github.io/portfolio)
+🔗 [LinkedIn](https://linkedin.com/in/leen01) • [Portfolio](https://nick-lee.com)
 <br>
 <a href="/assets/Nicholas-Lee-resume.pdf" download class="btn btn--primary">Download Resume (PDF)</a>
 
@@ -21,7 +21,7 @@ toc_level: 2
 
 ## 🧠 Summary
 
-Innovative and collaborative with a diverse skillset in molecular biology and data science. Proven success driving product development through rigorous experimentation, stakeholder engagement, and effective cross-department collaboration. Adept in FAIR data practices, scientific computing, and building scalable data tools for research and clinical applications.
+Data engineer and scientist in life sciences with 4+ years of wet lab experience and an MS in Data Science (UC Berkeley). I build end-to-end RWE pipelines — from raw EHR and claims ingestion through dbt-modeled cohorts to propensity score matching, survival analysis, and SHAP interpretability — using Python, SQL, Snowflake, dbt, and AWS. I translate between clinical science and data infrastructure in ways a pure data engineer can't.
 
 ---
 

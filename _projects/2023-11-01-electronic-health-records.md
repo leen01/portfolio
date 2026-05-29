@@ -1,9 +1,16 @@
 ---
 title: "Electronic Health Records Classification"
+subtitle: "ML pipeline classifying inpatient vs outpatient admission type from lab results and vital signs"
 excerpt: "Machine learning classification of EHR records as in-patient vs out-patient based on lab results and vitals."
 layout: single
 collection: projects
-tags: [machine-learning, classification, healthcare, EHR, clinical-data]
+project_category: "Machine Learning"
+tags:
+  - Python
+  - scikit-learn
+  - EHR
+  - Machine Learning
+  - Classification
 category: projects
 header:
   image: /assets/img/projects/ehr_classification_banner.svg

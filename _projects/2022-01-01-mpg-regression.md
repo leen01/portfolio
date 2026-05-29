@@ -3,6 +3,7 @@ title: "MPG Regression Modeling"
 excerpt: "Linear regression modeling on fuel efficiency data for automobiles."
 layout: single
 collection: projects
+published: false
 tags: [regression, eda, automotive]
 category: projects
 header:
