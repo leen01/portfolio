@@ -1,0 +1,271 @@
+/* --- Layout container --- */
+.portfolio-layout {
+    display: flex;
+    flex-direction: row-reverse;
+    /* Filters on the right */
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+/* --- Sidebar (filters) --- */
+.filter-sidebar {
+    width: 260px;
+    background: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1.25rem;
+    position: sticky;
+    top: 2rem;
+    height: fit-content;
+}
+
+.filter-sidebar h3 {
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+.filter-sidebar input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.filter-group {
+    margin-bottom: 1rem;
+}
+
+.filter-group .filter-title {
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+}
+
+.filter-group .filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.filter-group .filter-tag {
+    background: #e0e0e0;
+    color: #333;
+    font-size: 0.75rem;
+    padding: 4px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.filter-group .filter-tag.active {
+    background: #0b7285;
+    color: white;
+}
+
+/* --- Project grid --- */
+.portfolio-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 2rem;
+}
+
+/* --- Project cards --- */
+.project-item {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    transition: transform 0.2s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.project-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.project-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #0b7285;
+}
+
+.project-item p {
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.project-link {
+    color: #0056b3;
+    /* nice readable blue, customize as needed */
+    text-decoration: underline;
+    font-weight: 500;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.project-link:hover {
+    color: #003d80;
+    /* darker on hover */
+    text-decoration: underline;
+    /* keeps underline on hover */
+    cursor: pointer;
+}
+
+/* --- Project Cards (github) --- */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+    position: relative;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.card-image:hover .card-overlay {
+    opacity: 1;
+}
+
+.card-body {
+    padding: 1rem;
+    text-align: center;
+}
+
+.card-body h3 {
+    color: #005f73;
+    margin: 0.5rem 0;
+}
+
+.view-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #0077b6;
+    font-weight: bold;
+    text-decoration: underline;
+}
+/* --- Tags inside project card --- */
+.tag {
+    background: #e8f4f8;
+    font-size: 0.72rem;
+    padding: 2px 8px;
+    margin: 0.2rem 0.2rem 0.2rem 0;
+    border-radius: 12px;
+    color: #005f73;
+    border: 1px solid #b8dde6;
+    display: inline-block;
+}
+
+/* --- Project category label --- */
+.project-category-label {
+    display: inline-block;
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: #fff;
+    background: #005f73;
+    border-radius: 4px;
+    padding: 2px 8px;
+    margin-bottom: 0.4rem;
+}
+
+/* --- Project subtitle text --- */
+.project-subtitle-text {
+    font-size: 0.82rem;
+    color: #666;
+    margin: 0.25rem 0 0.5rem;
+    line-height: 1.4;
+}
+
+/* --- Project tags row --- */
+.project-tags {
+    margin: 0.5rem 0 0.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.15rem;
+}
+
+.flex-split {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+    gap: 2rem;
+}
+
+.flex-split .left {
+    /* font-weight: bold; */
+    white-space: nowrap;
+    width: 48%;
+    text-align: left;
+}
+
+.flex-split .right {
+    width: 48%;
+    text-align: right;
+}
+
+.thumbnail {
+    width: 100%;
+    max-width: 250px;
+    /* limits width on large screens */
+    aspect-ratio: 5 / 3;
+    /* keeps consistent shape across all images */
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
+.thumbnail-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+}

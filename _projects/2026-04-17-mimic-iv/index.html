@@ -1,0 +1,744 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.27.0 by Michael Rose
+  Copyright 2013-2025 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en-US" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>RWE Study: Vasopressor vs Fluid Resuscitation in ICU Sepsis - Nicholas Lee</title>
+<meta name="description" content="End-to-end real-world evidence pipeline using MIMIC-IV — Snowflake, dbt, propensity score matching, survival analysis, and SHAP interpretability.">
+
+
+  <meta name="author" content="Nicholas Lee">
+  
+  <meta property="article:author" content="Nicholas Lee">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Nicholas Lee">
+<meta property="og:title" content="RWE Study: Vasopressor vs Fluid Resuscitation in ICU Sepsis">
+<meta property="og:url" content="https://nick-lee.com/_projects/2026-04-17-mimic-iv/">
+
+
+  <meta property="og:description" content="End-to-end real-world evidence pipeline using MIMIC-IV — Snowflake, dbt, propensity score matching, survival analysis, and SHAP interpretability.">
+
+
+
+  <meta property="og:image" content="https://nick-lee.com/assets/img/projects/mimic_iv_project_banner.svg">
+
+
+
+
+
+  <meta property="article:published_time" content="2026-04-17T00:00:00+00:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://nick-lee.com/_projects/2026-04-17-mimic-iv/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Nicholas Lee Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--project" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Nicholas Lee
+          <span class="site-subtitle">Data Engineer & Scientist in Life Sciences</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/"
+                
+                
+              >Home</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/projects/"
+                
+                
+              >Projects</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/resume/"
+                
+                
+              >Resume</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/about/"
+                
+                
+              >About</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="https://github.com/leen01"
+                
+                
+              >GitHub</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero"
+  style=" background-image: url('');"
+>
+  
+    <img src="/assets/img/projects/mimic_iv_project_banner.svg" alt="RWE Study: Vasopressor vs Fluid Resuscitation in ICU Sepsis" class="page__hero-image">
+  
+  
+</div>
+
+
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/" itemprop="item"><span itemprop="name">Home</span></a>
+
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/_projects" itemprop="item"><span itemprop="name">_projects</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">RWE Study: Vasopressor vs Fluid Resuscitation in ICU Sepsis</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="RWE Study: Vasopressor vs Fluid Resuscitation in ICU Sepsis">
+    <meta itemprop="description" content="End-to-end real-world evidence pipeline using MIMIC-IV — Snowflake, dbt, propensity score matching, survival analysis, and SHAP interpretability.">
+    <meta itemprop="datePublished" content="2026-04-17T00:00:00+00:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">
+            <a href="https://nick-lee.com/_projects/2026-04-17-mimic-iv/" itemprop="url">RWE Study: Vasopressor vs Fluid Resuscitation in ICU Sepsis
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#overview">Overview</a></li><li><a href="#comparative-effectiveness-of-vasopressor-vs-fluid-resuscitation">Comparative Effectiveness of Vasopressor vs Fluid Resuscitation</a></li><li><a href="#in-icu-sepsis-patients-a-real-world-evidence-study">in ICU Sepsis Patients: A Real-World Evidence Study</a><ul><li><a href="#overview">Overview</a></li><li><a href="#clinical-question">Clinical Question</a></li><li><a href="#key-results">Key Results</a></li><li><a href="#study-design">Study Design</a></li><li><a href="#methods">Methods</a><ul><li><a href="#data-source">Data source</a></li><li><a href="#pipeline">Pipeline</a></li><li><a href="#propensity-score-matching">Propensity score matching</a></li><li><a href="#survival-analysis">Survival analysis</a></li><li><a href="#interpretability">Interpretability</a></li></ul></li><li><a href="#repo-structure">Repo structure</a></li><li><a href="#reproducing-this-analysis">Reproducing this analysis</a><ul><li><a href="#prerequisites">Prerequisites</a></li><li><a href="#setup">Setup</a></li><li><a href="#run-dbt-models">Run dbt models</a></li><li><a href="#run-notebooks">Run notebooks</a></li></ul></li><li><a href="#limitations">Limitations</a></li><li><a href="#references">References</a></li><li><a href="#author">Author</a></li></ul></li></ul>
+            </nav>
+          </aside>
+        
+        <p>A fully reproducible real-world evidence (RWE) study examining 28-day mortality 
+outcomes in ICU sepsis patients treated with vasopressors versus fluid resuscitation 
+alone, using MIMIC-IV electronic health record data from over 65,000 ICU admissions 
+at Beth Israel Deaconess Medical Center.</p>
+
+<ul>
+  <li><strong>Tools:</strong> Python, SQL, Snowflake, dbt, Docker, lifelines, scikit-learn, SHAP</li>
+  <li><strong>Methods:</strong> Propensity score matching (PSM), Kaplan-Meier survival analysis, 
+Cox proportional hazards, SHAP TreeExplainer</li>
+  <li><strong>Data:</strong> MIMIC-IV v3.1 (PhysioNet) — hosp and ICU modules</li>
+  <li><strong>Highlights:</strong> End-to-end dbt pipeline from raw EHR tables to analysis-ready 
+cohort; 1:1 nearest-neighbor PSM with Austin (2011) caliper; Schoenfeld residuals 
+PH assumption testing; treatment effect heterogeneity via SHAP interaction values</li>
+  <li><strong>GitHub:</strong> <a href="https://github.com/leen01/mimic_iv">View Repository</a></li>
+</ul>
+
+<h1 id="overview">Overview</h1>
+<p>Sepsis kills approximately 270,000 Americans annually, and treatment decisions in the first hours of ICU admission are among the highest-stakes in medicine. This project asks a question clinicians actively debate: among sepsis patients in the ICU, does early vasopressor use lead to different mortality outcomes than fluid resuscitation alone?
+Using MIMIC-IV — a de-identified EHR dataset from over 65,000 ICU admissions at Beth Israel Deaconess Medical Center — I built a fully reproducible RWE pipeline from raw data to clinical findings.
+Pipeline: Raw MIMIC-IV tables are ingested into Snowflake and transformed through a documented dbt project into an analysis-ready cohort. Staging models clean and standardize the source tables. Mart models encode the study protocol: sepsis ICD-10 inclusion criteria, 24-hour treatment windows, index date logic, and organ dysfunction covariates.
+Causal inference: Because vasopressor patients are sicker at baseline — higher lactate, worse renal function, more hemodynamic instability — a naive comparison is meaningless. I applied 1:1 nearest-neighbor propensity score matching using a logistic regression on 11 covariates, following Austin (2011) caliper recommendations. Post-matching standardized mean differences fell below 0.1 for all covariates.
+Survival analysis: Kaplan-Meier curves and a Cox proportional hazards model on the matched cohort estimate the adjusted treatment effect. The proportional hazards assumption was verified via Schoenfeld residuals. A sensitivity analysis comparing crude vs adjusted hazard ratios quantifies the confounding removed by matching.</p>
+
+<!-- TODO: add KM curve screenshot -->
+<!-- ![Kaplan-Meier survival curves for vasopressor vs fluid resuscitation cohorts](/assets/img/projects/mimic_iv_km_curves.png) -->
+
+<p><em>Figure: Kaplan-Meier survival curves for vasopressor vs fluid resuscitation cohorts (28-day follow-up, propensity score matched)</em></p>
+
+<p>Interpretability: A gradient boosted classifier with SHAP TreeExplainer characterizes non-linear feature effects and treatment effect heterogeneity — revealing which patient subgroups show the strongest association between vasopressor use and mortality outcomes.</p>
+
+<!-- TODO: add SHAP summary plot screenshot -->
+<!-- ![SHAP feature importance plot for treatment effect heterogeneity](/assets/img/projects/mimic_iv_shap_plot.png) -->
+
+<p><em>Figure: SHAP summary plot — feature contributions to vasopressor treatment effect by patient subgroup</em></p>
+
+
+
+  
+  
+  
+    
+      <h2>Results (from GitHub README)</h2>
+      <table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>Vasopressor</th>
+      <th>Fluid only</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>N (matched)</td>
+      <td>3,916</td>
+      <td>3,916</td>
+    </tr>
+    <tr>
+      <td>28-day mortality</td>
+      <td>27.8%</td>
+      <td>21.6%</td>
+    </tr>
+    <tr>
+      <td>Median time-to-event (days)</td>
+      <td>9</td>
+      <td>9</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Adjusted HR: 1.37 (95% CI 1.27–1.48, p = 0.000)</strong></p>
+
+<p><img src="figures/03_km_curves_matched.png" alt="KM curves" /></p>
+
+<p><img src="figures/02_love_plot_postmatch.png" alt="Love plot" /></p>
+
+<p><img src="figures/04_shap_beeswarm.png" alt="SHAP beeswarm" /></p>
+
+<hr />
+
+    
+    <details class="readme-block">
+      <summary><strong>📄 Full README</strong></summary>
+      <div class="readme-content">
+        <h1 id="comparative-effectiveness-of-vasopressor-vs-fluid-resuscitation">Comparative Effectiveness of Vasopressor vs Fluid Resuscitation</h1>
+<h1 id="in-icu-sepsis-patients-a-real-world-evidence-study">in ICU Sepsis Patients: A Real-World Evidence Study</h1>
+
+<p><img src="https://img.shields.io/badge/Python-3.11-blue" alt="Python" />
+<img src="https://img.shields.io/badge/dbt-core-orange" alt="dbt" />
+<img src="https://img.shields.io/badge/Snowflake-data--warehouse-29B5E8" alt="Snowflake" />
+<img src="https://img.shields.io/badge/Docker-containerized-2496ED" alt="Docker" />
+<img src="https://img.shields.io/badge/status-complete-brightgreen" alt="Status" /></p>
+
+<h2 id="overview">Overview</h2>
+
+<p>A fully reproducible real-world evidence (RWE) study examining 28-day
+mortality outcomes in ICU sepsis patients treated with vasopressors versus
+fluid resuscitation alone, using MIMIC-IV electronic health record data.</p>
+
+<p>This project demonstrates an end-to-end clinical data science workflow:
+raw EHR data ingestion -&gt; dbt pipeline -&gt; propensity score matching -&gt;
+survival analysis -&gt; SHAP interpretability.</p>
+
+<hr />
+
+<h2 id="clinical-question">Clinical Question</h2>
+
+<blockquote>
+  <p>Among adult ICU patients with sepsis, is vasopressor use in the first
+24 hours of ICU admission associated with different 28-day mortality
+compared to fluid resuscitation alone, after controlling for
+baseline severity?</p>
+</blockquote>
+
+<hr />
+
+<h2 id="key-results">Key Results</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>Vasopressor</th>
+      <th>Fluid only</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>N (matched)</td>
+      <td>3,916</td>
+      <td>3,916</td>
+    </tr>
+    <tr>
+      <td>28-day mortality</td>
+      <td>27.8%</td>
+      <td>21.6%</td>
+    </tr>
+    <tr>
+      <td>Median time-to-event (days)</td>
+      <td>9</td>
+      <td>9</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Adjusted HR: 1.37 (95% CI 1.27–1.48, p = 0.000)</strong></p>
+
+<p><img src="figures/03_km_curves_matched.png" alt="KM curves" /></p>
+
+<p><img src="figures/02_love_plot_postmatch.png" alt="Love plot" /></p>
+
+<p><img src="figures/04_shap_beeswarm.png" alt="SHAP beeswarm" /></p>
+
+<hr />
+
+<h2 id="study-design">Study Design</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Choice</th>
+      <th>Rationale</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Population</td>
+      <td>Adult ICU patients, sepsis ICD-10</td>
+      <td>Clinically defined cohort</td>
+    </tr>
+    <tr>
+      <td>Exposure</td>
+      <td>Vasopressor use within 24h of ICU admit</td>
+      <td>Limits immortal time bias</td>
+    </tr>
+    <tr>
+      <td>Comparator</td>
+      <td>Crystalloid/colloid fluid only</td>
+      <td>Active comparator design</td>
+    </tr>
+    <tr>
+      <td>Outcome</td>
+      <td>28-day all-cause mortality</td>
+      <td>Standard ICU trial endpoint</td>
+    </tr>
+    <tr>
+      <td>Index date</td>
+      <td>First ICU admission</td>
+      <td>Consistent temporal anchor</td>
+    </tr>
+    <tr>
+      <td>Exclusion</td>
+      <td>Age &lt;18, &gt;89, ICU LOS &lt;4h</td>
+      <td>Removes edge cases</td>
+    </tr>
+    <tr>
+      <td>Confounding</td>
+      <td>Propensity score matching (1:1 NN)</td>
+      <td>Balances baseline severity</td>
+    </tr>
+    <tr>
+      <td>Caliper</td>
+      <td>0.2 × SD(logit PS)</td>
+      <td>Austin (2011) standard</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="methods">Methods</h2>
+
+<h3 id="data-source">Data source</h3>
+<p>MIMIC-IV v3.1 (Beth Israel Deaconess Medical Center, 2008–2022).
+Access via PhysioNet credentialing. Hosp and ICU modules used.</p>
+
+<h3 id="pipeline">Pipeline</h3>
+<p>Raw MIMIC-IV tables are loaded into Snowflake and transformed via
+a dbt project into analysis-ready models:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>RAW (Snowflake)
+  └── staging/         stg_patients, stg_admissions,
+  │                    stg_diagnoses, stg_icustays
+  └── marts/           int_sepsis_cohort
+                       int_treatment_flags
+                       mart_analysis_cohort   ← Python reads this
+</code></pre></div></div>
+
+<h3 id="propensity-score-matching">Propensity score matching</h3>
+<p>Logistic regression on 11 covariates (demographics, organ dysfunction
+labs, ICU LOS). 1:1 nearest-neighbor matching without replacement.
+Caliper: 0.2 × SD(logit PS). Balance assessed via standardized mean
+difference (SMD &lt; 0.1 threshold).</p>
+
+<h3 id="survival-analysis">Survival analysis</h3>
+<p>Kaplan-Meier curves with log-rank test. Cox proportional hazards
+model with L2 penalization (penalizer=0.1) adjusting for residual
+covariate imbalance post-matching. Proportional hazards assumption
+tested via Schoenfeld residuals.</p>
+
+<h3 id="interpretability">Interpretability</h3>
+<p>Gradient boosted classifier + SHAP TreeExplainer to characterize
+non-linear feature effects and treatment effect heterogeneity
+beyond the Cox model.</p>
+
+<hr />
+
+<h2 id="repo-structure">Repo structure</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mimic-rwe/
+├── dbt_project.yml
+├── profiles.yml              # gitignored
+├── models/
+│   ├── staging/
+│   │   ├── stg_patients.sql
+│   │   ├── stg_admissions.sql
+│   │   ├── stg_diagnoses.sql
+│   │   └── stg_icustays.sql
+│   └── marts/
+│       ├── int_sepsis_cohort.sql
+│       ├── int_treatment_flags.sql
+│       └── mart_analysis_cohort.sql
+├── notebooks/
+│   ├── 01_cohort_eda.ipynb
+│   ├── 02_psm.ipynb
+│   ├── 03_survival.ipynb
+│   └── 04_shap.ipynb
+├── figures/
+├── data/                     # gitignored
+├── Dockerfile
+├── requirements.txt
+└── README.md
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="reproducing-this-analysis">Reproducing this analysis</h2>
+
+<h3 id="prerequisites">Prerequisites</h3>
+<ul>
+  <li>PhysioNet credentialed MIMIC-IV access</li>
+  <li>Snowflake account (free trial works)</li>
+  <li>Docker</li>
+</ul>
+
+<h3 id="setup">Setup</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/leen01/mimic-rwe
+<span class="nb">cd </span>mimic-rwe
+
+<span class="c"># copy and fill in your credentials</span>
+<span class="nb">cp</span> .env.example .env
+
+<span class="c"># build and run container</span>
+docker build <span class="nt">-t</span> mimic-rwe <span class="nb">.</span>
+docker run <span class="nt">--env-file</span> .env <span class="nt">-v</span> <span class="si">$(</span><span class="nb">pwd</span><span class="si">)</span>:/app mimic-rwe
+</code></pre></div></div>
+
+<h3 id="run-dbt-models">Run dbt models</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dbt run <span class="nt">--select</span> staging.<span class="k">*</span>
+dbt run <span class="nt">--select</span> int_sepsis_cohort
+dbt run <span class="nt">--select</span> int_treatment_flags
+dbt run <span class="nt">--select</span> mart_analysis_cohort
+dbt <span class="nb">test</span>
+</code></pre></div></div>
+
+<h3 id="run-notebooks">Run notebooks</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jupyter lab notebooks/
+</code></pre></div></div>
+
+<p>Run in order: <code class="language-plaintext highlighter-rouge">01</code> -&gt; <code class="language-plaintext highlighter-rouge">02</code> -&gt; <code class="language-plaintext highlighter-rouge">03</code> -&gt; <code class="language-plaintext highlighter-rouge">04</code></p>
+
+<hr />
+
+<h2 id="limitations">Limitations</h2>
+
+<ul>
+  <li><strong>Residual confounding:</strong> Unmeasured severity indicators (APACHE score,
+vasopressor dose) not fully captured in MIMIC-IV.</li>
+  <li><strong>Single-center data:</strong> BIDMC only — generalizability limited.</li>
+  <li><strong>ICD coding:</strong> Sepsis ICD codes have known sensitivity/specificity
+limitations as a cohort definition.</li>
+  <li><strong>Immortal time:</strong> 24-hour treatment window mitigates but does not
+fully eliminate immortal time bias.</li>
+</ul>
+
+<hr />
+
+<h2 id="references">References</h2>
+
+<ul>
+  <li>Goldberger, A., Amaral, L., Glass, L., Hausdorff, J., Ivanov, P. C., Mark, R., … &amp; Stanley, H. E. (2000). PhysioBank, PhysioToolkit, and PhysioNet: Components of a new research resource for complex physiologic signals. Circulation [Online]. 101 (23), pp. e215–e220. RRID:SCR_007345.</li>
+  <li>Austin PC. An introduction to propensity score methods for reducing
+confounding. <em>Multivariate Behavioral Research</em> 2011.</li>
+  <li>Schoenfeld D. Partial residuals for the proportional hazards
+regression model. <em>Biometrika</em> 1982.</li>
+  <li>Lundberg SM, Lee SI. A unified approach to interpreting model
+predictions. <em>NeurIPS</em> 2017.</li>
+</ul>
+
+<hr />
+
+<h2 id="author">Author</h2>
+
+<p><strong>Nicholas Lee</strong> — Data Scientist
+<a href="https://nick-lee.com">nick-lee.com</a> ·
+<a href="https://github.com/leen01">GitHub</a> ·
+<a href="https://linkedin.com/in/leen01">LinkedIn</a></p>
+
+      </div>
+    </details>
+  
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#causal-inference" class="page__taxonomy-item p-category" rel="tag">Causal Inference</a><span class="sep">, </span>
+    
+      <a href="/tags/#dbt" class="page__taxonomy-item p-category" rel="tag">dbt</a><span class="sep">, </span>
+    
+      <a href="/tags/#python" class="page__taxonomy-item p-category" rel="tag">Python</a><span class="sep">, </span>
+    
+      <a href="/tags/#rwe" class="page__taxonomy-item p-category" rel="tag">RWE</a><span class="sep">, </span>
+    
+      <a href="/tags/#shap" class="page__taxonomy-item p-category" rel="tag">SHAP</a><span class="sep">, </span>
+    
+      <a href="/tags/#snowflake" class="page__taxonomy-item p-category" rel="tag">Snowflake</a><span class="sep">, </span>
+    
+      <a href="/tags/#survival-analysis" class="page__taxonomy-item p-category" rel="tag">Survival Analysis</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#projects" class="page__taxonomy-item p-category" rel="tag">projects</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2026-04-17T00:00:00+00:00">April 17, 2026</time></p>
+
+      </footer>
+
+      
+
+      
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://github.com/leen01" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/leen01/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2026 <a href="https://nick-lee.com">Nicholas Lee</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+  </body>
+</html>
