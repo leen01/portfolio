@@ -12,8 +12,9 @@
 # Ruby Gem
 *.gem
 .bundle
-Gemfile.lock
 **/vendor/bundle
+# Gemfile.lock is intentionally tracked so CI gets a pre-resolved dependency graph.
+# Without it, `bundle install` on Linux may fail to install native gems (sass-embedded, ffi).
 
 # Node.js and NPM
 node_modules
