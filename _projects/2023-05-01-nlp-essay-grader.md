@@ -1,7 +1,8 @@
 ---
 title: "NLP Essay Grader"
 excerpt: "Automated short-answer grading system using NLP and cosine similarity."
-layout: single
+layout: project
+github_repo: leen01/nlp-essay-grader
 collection: projects
 published: false
 tags: [nlp, education, machine-learning]

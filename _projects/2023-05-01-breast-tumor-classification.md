@@ -2,7 +2,8 @@
 title: "Breast Tumor Classification"
 subtitle: "Malignant vs benign tumor classification from histological features using ensemble methods"
 excerpt: "Machine learning classification of malignant vs benign tumors using histological data."
-layout: single
+layout: project
+github_repo: leen01/breast-tumor-classification
 collection: projects
 project_category: "Machine Learning"
 tags:

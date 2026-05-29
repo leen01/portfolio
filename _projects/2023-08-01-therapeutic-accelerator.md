@@ -2,7 +2,8 @@
 title: "Therapeutic Accelerator"
 subtitle: "Automated literature pipeline and SQL-backed analytics dashboard to reduce therapeutic discovery cycle time"
 excerpt: "Designed a data product to reduce experimental cycle time for therapeutic discovery."
-layout: single
+layout: project
+github_repo: leen01/therapeutic-accelerator
 collection: projects
 project_category: "Data Engineering"
 tags:

@@ -1,0 +1,22 @@
+---
+layout: single
+---
+
+{{ content }}
+
+{% if page.github_repo %}
+  {% assign repo_key = page.github_repo | replace: '/', '__' %}
+  {% assign readme_data = site.data.readmes[repo_key] %}
+  {% if readme_data %}
+    {% if readme_data.sections.results != "" and readme_data.sections.results != nil %}
+      <h2>Results (from GitHub README)</h2>
+      {{ readme_data.sections.results | markdownify }}
+    {% endif %}
+    <details class="readme-block">
+      <summary><strong>📄 Full README</strong></summary>
+      <div class="readme-content">
+        {{ readme_data.full | markdownify }}
+      </div>
+    </details>
+  {% endif %}
+{% endif %}

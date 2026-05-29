@@ -2,7 +2,8 @@
 title: "Electronic Health Records Classification"
 subtitle: "ML pipeline classifying inpatient vs outpatient admission type from lab results and vital signs"
 excerpt: "Machine learning classification of EHR records as in-patient vs out-patient based on lab results and vitals."
-layout: single
+layout: project
+github_repo: leen01/electronic_health_records
 collection: projects
 project_category: "Machine Learning"
 tags:
