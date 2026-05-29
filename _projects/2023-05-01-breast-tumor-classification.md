@@ -2,10 +2,11 @@
 title: "Breast Tumor Classification"
 excerpt: "Machine learning classification of malignant vs benign tumors using histological data."
 layout: single
-collection: portfolio
+collection: projects
 tags: [ML, Supervised-Learning]
-category: ML for Biomedicine
-thumbnail: /assets/img/projects/breast-tumor-classification.png
+category: projects
+header:
+  image: /assets/img/projects/breast-tumor-classification.png
 ---
 
 Used supervised machine learning models to classify tumors from the Wisconsin Breast Cancer dataset.

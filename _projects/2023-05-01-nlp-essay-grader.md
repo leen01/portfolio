@@ -2,11 +2,10 @@
 title: "NLP Essay Grader"
 excerpt: "Automated short-answer grading system using NLP and cosine similarity."
 layout: single
-collection: portfolio
+collection: projects
 tags: [nlp, education, machine-learning]
-category: NLP & ML
-thumbnail: /assets/img/projects/nlp-essay-grader.png
-header: 
+category: projects
+header:
   overlay_image: /assets/img/projects/essay_grader_header.png
 ---
 

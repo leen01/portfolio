@@ -2,11 +2,12 @@
 title: "College Scorecard EDA"
 excerpt: "Exploratory data analysis of U.S. college cost, debt, and earnings using Scorecard data."
 layout: single
-collection: portfolio
+collection: projects
 tags: [education, eda, data-viz]
-category: Exploratory Analysis
+category: projects
 date: 2021-08-01
-thumbnail: /assets/img/projects/eda-college-scorecard.png
+header:
+  image: /assets/img/projects/eda-college-scorecard.png
 ---
 
 Visualized trends and correlations in college debt, cost, and income outcomes using the U.S. Department of Education Scorecard dataset.

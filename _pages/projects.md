@@ -8,17 +8,25 @@ classes: wide
 <h3 class="portfolio-title">Projects</h3>
 <p class="portfolio-subtitle">The projects I've been working on</p>
 
-<section id="projects">
-<h2>Projects</h2>
-<div class="project-grid"></div>
-</section>
-
-<div id="projects">
-  <div class="project-grid"></div>
+<div class="project-grid">
+  {% assign sorted_projects = site.projects | sort: "date" | reverse %}
+  {% for project in sorted_projects %}
+    <div class="project-card">
+      {% if project.header.teaser %}
+        <a href="{{ project.url }}" class="card-image-link">
+          <div class="card-image" style="background-image: url('{{ project.header.teaser }}');">
+            <div class="card-overlay">
+              <p>{{ project.excerpt | strip_html }}</p>
+            </div>
+          </div>
+        </a>
+      {% endif %}
+      <div class="card-body">
+        <h3>{{ project.title }}</h3>
+        <a href="{{ project.url }}" class="view-link">View Project</a>
+      </div>
+    </div>
+  {% endfor %}
 </div>
 
-<script src="/assets/js/projects-gitpuller.js"></script>
 <link rel="stylesheet" href="/assets/css/projects_test.css">
-
-<!-- <script src="/assets/js/projects-filters.js"></script>
-<link rel="stylesheet" href="/assets/css/projects.css"> -->

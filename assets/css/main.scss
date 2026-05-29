@@ -7,3 +7,31 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+// Skill tag badges — teal accent matches dark skin primary color
+.skill-tag {
+  display: inline-block;
+  padding: 0.2em 0.6em;
+  margin: 0.15em;
+  border-radius: 4px;
+  background-color: rgba(0, 173, 181, 0.12);
+  color: #00adb5;
+  border: 1px solid rgba(0, 173, 181, 0.35);
+  font-size: 0.78em;
+  font-family: Monaco, Consolas, "Lucida Console", monospace;
+  white-space: nowrap;
+}
+
+// Featured projects — make entire card clickable
+.archive__item-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+
+  &:hover,
+  &:focus {
+    .archive__item {
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+  }
+}

@@ -14,7 +14,7 @@ layout: archive
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
 <div class="entries-{{ entries_layout }}">
-  {% include documents-collection.html entries=projects type=entries_layout %}
+  {% include documents-collection.html entries=projects type=entries_layout sort_by='date' sort_order='reverse' %}
 </div>
 
 {% include paginator.html %}

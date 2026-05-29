@@ -2,10 +2,11 @@
 title: "Therapeutic Accelerator"
 excerpt: "Designed a data product to reduce experimental cycle time for therapeutic discovery."
 layout: single
-collection: portfolio
+collection: projects
 tags: [data-engineering, biotech, dashboard]
-category: bioinformatics
-thumbnail: /assets/img/projects/therapeutic-accelerator.png
+category: projects
+header:
+  image: /assets/img/projects/therapeutic-accelerator.png
 ---
 
 A chatbot tool for summaries and Q&A on articles from repositories such as Pubmed, Arxiv, bioRxiv, and medRxiv. Built with a dashboard interface and SQL-backed reporting tools.

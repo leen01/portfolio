@@ -19,16 +19,16 @@ locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "Nicholas Lee"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "Data Engineer & Scientist in Life Sciences"
 name                     : "Nick Lee"
-description              : "Computational Biologist | Data Scientist | Translational Bioinformatics"
+description              : "Data Engineer & Scientist in Life Sciences"
 url                      : "https://nick-lee.com" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : leen01/portfolio # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-breadcrumbs              : # true, false (default)
+breadcrumbs              : true
 words_per_minute         : 200
 enable_copy_code_button  : # true, false (default)
 copyright                : # "copyright" name, defaults to site.title
@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "Nicholas Lee"
   avatar           : "/assets/img/avatar.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Computational biology, bioinformatics, drug discovery, and data science."
+  bio              : "Data Engineer & Scientist in Life Sciences — building pipelines and models for clinical development."
   location         : "Seattle WA, USA"
   email            : "nicklee0101@gmail.com"
   links:
@@ -128,6 +128,9 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/leen01/"
+    - label: "Resume"
+      icon: "fas fa-fw fa-file-pdf"
+      url: "/assets/Nicholas-Lee-resume.pdf"
 
 # Site Footer
 footer:

@@ -5,66 +5,57 @@ permalink: /about/
 toc: true
 ---
 
-# 👋 Hi, I'm Nick Lee
+# Hi, I'm Nick Lee
 
-I'm a **computational biologist** and **data scientist** with a background in **molecular biology**, **bioinformatics**, and **data engineering**. I’m passionate about building tools and workflows that make biological data more accessible, interoperable, and actionable — especially in the context of **translational research**, **precision medicine**, and **drug discovery**.
-
----
-
-## 🧬 What I Do
-
-I combine experimental insight with software engineering and analytics to solve problems at the interface of **biology and data**. My work often involves:
-
-- Designing scalable data models for biomedical repositories (FAIR-compliant)
-- Curating multi-omics datasets for public release
-- Building dashboards, ETL pipelines, and database systems
-- Collaborating across disciplines to move discoveries from **bench to bedside**
+I'm a **data engineer and scientist in life sciences** with a background spanning **molecular biology**, **clinical data engineering**, and **applied machine learning**. I build the infrastructure and models that turn raw EHR, claims, and omics data into evidence that drives clinical and translational decisions.
 
 ---
 
-## 🚀 Mission & Motivation
+## What I Do
 
-I’m driven by the opportunity to **accelerate research** through better infrastructure and smarter tools. I believe well-designed data systems can transform how we share findings, replicate experiments, and ultimately improve patient outcomes.
+I combine wet-lab domain knowledge with software and analytics to work at the intersection of **biology and data**. My work includes:
+
+- Designing end-to-end data pipelines from raw EHR and claims tables to analysis-ready cohorts (Snowflake, dbt, Python)
+- Building real-world evidence (RWE) studies — cohort selection, propensity score matching, survival analysis, and causal inference
+- Applying machine learning to clinical and biomedical datasets (scikit-learn, SHAP, gradient boosting)
+- Collaborating directly with clinical and translational teams, leveraging a BS in molecular biology and 4 years of bench experience
 
 ---
 
-## 🔍 Looking Ahead
+## Background
 
-I’m currently exploring opportunities that blend:
+My molecular biology background gives me the domain fluency to work directly with clinical and scientific teams — not just beside them. I understand the experimental constraints behind the data, which makes a real difference when designing cohort logic, interpreting survival curves, or communicating findings.
 
-- **Bioinformatics & AI**  
-- **Computational drug development**  
-- **Open science infrastructure**  
-- **Clinical data modeling & real-world evidence**
+---
 
-I'm also preparing for **PhD programs** that focus on **translational bioinformatics** and **precision health**, particularly in the UC and Stanford systems.
+## Looking Ahead
+
+I'm focused on roles where rigorous data engineering and data science accelerate clinical development — whether that's building patient cohort infrastructure, designing RWE studies, or modeling treatment outcomes at scale.
 
 ---
 
 ## Skills
 
-**🧠 Programming Languages**
-- Python, R, SQL, Bash
+**Programming & Query**
+- Python, SQL, R, Bash
 
-**🧰 Tools & Libraries**
-- Pandas, Scikit-learn, BioPython, TensorFlow, OpenCV, matplotlib
-- Docker, Git, Jupyter, Conda, Flask, Hugging Face
+**Data Engineering**
+- Snowflake, dbt, AWS, Docker, Git
 
-**🔬 Domains**
-- Bioinformatics
-- Computational Drug Discovery
-- Data Wrangling & Cleaning
-- Molecular Modeling
-- NLP for Biomedical Texts
+**Analytics & ML**
+- pandas, scikit-learn, lifelines, SHAP, matplotlib, seaborn
 
+**Domains**
+- Real-World Evidence (RWE)
+- Survival Analysis & Causal Inference
+- EHR & Claims Data
+- Clinical Cohort Design
+- Biomedical NLP
 
 ---
 
-## 📬 Let’s Connect
+## Let's Connect
 
-If you’re working on something impactful and data-driven in biotech, healthcare, or bioinformatics — I’d love to chat.
+If you're working on something data-driven in life sciences, biotech, or clinical development — I'd love to chat.
 
-📧 [nicklee0101@gmail.com](mailto:nicklee0101@gmail.com)  
-🔗 [LinkedIn](https://linkedin.com/in/leen01)  
-🐙 [GitHub](https://github.com/leen01)
-
+[nicklee0101@gmail.com](mailto:nicklee0101@gmail.com) | [LinkedIn](https://linkedin.com/in/leen01) | [GitHub](https://github.com/leen01)

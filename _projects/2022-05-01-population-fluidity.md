@@ -2,10 +2,11 @@
 title: "Population Fluidity Project"
 excerpt: "Data narrative platform on population change and inequality in the U.S."
 layout: single
-collection: portfolio
-tags: [tableau,	visualization, civic-data, frontend]
-category: Data Visualization
-thumbnail: /assets/img/projects/us-migration-patterns.png
+collection: projects
+tags: [tableau, visualization, civic-data, frontend]
+category: projects
+header:
+  image: /assets/img/projects/us-migration-patterns.png
 ---
 
 An interactive website that visualizes and explores U.S. population movement, eviction, and demographic change using census and eviction lab data.

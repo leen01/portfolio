@@ -2,10 +2,11 @@
 title: "MPG Regression Modeling"
 excerpt: "Linear regression modeling on fuel efficiency data for automobiles."
 layout: single
-collection: portfolio
+collection: projects
 tags: [regression, eda, automotive]
-category: Statistics
-thumbnail: /assets/img/projects/mpg-regression.png
+category: projects
+header:
+  image: /assets/img/projects/mpg-regression.png
 ---
 
 Performed exploratory data analysis and regression modeling on car attributes to predict miles-per-gallon (MPG).
